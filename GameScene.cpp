@@ -116,8 +116,8 @@ void GameScene::Draw()
 
 	// 3Dオブクジェクトの描画
 	objSphere->Draw();
-	//objSkydome->Draw();
-	//objGround->Draw();
+	objSkydome->Draw();
+	objGround->Draw();
 	objFighter->Draw();
 
 	/// <summary>
