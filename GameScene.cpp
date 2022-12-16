@@ -98,7 +98,7 @@ void GameScene::Draw()
 	// 背景スプライト描画前処理
 	Sprite::PreDraw(cmdList);
 	// 背景スプライト描画
-	//spriteBG->Draw();
+	spriteBG->Draw();
 
 	/// <summary>
 	/// ここに背景スプライトの描画処理を追加できる
@@ -116,8 +116,8 @@ void GameScene::Draw()
 
 	// 3Dオブクジェクトの描画
 	objSphere->Draw();
-	objSkydome->Draw();
-	objGround->Draw();
+	//objSkydome->Draw();
+	//objGround->Draw();
 	objFighter->Draw();
 
 	/// <summary>
