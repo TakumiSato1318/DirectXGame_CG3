@@ -139,5 +139,5 @@ class Mesh {
 	// インデックスバッファのマップ
 	unsigned short* indexMap = nullptr;
 	//頂点法線スムージング用データ
-	std::unordered_map<unsigned, std::vector<unsigned short>>smoothData;
+	std::unordered_map<unsigned short, std::vector<unsigned short>>smoothData;
 };

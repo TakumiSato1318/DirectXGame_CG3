@@ -111,7 +111,7 @@ void Mesh::CalculateSmoothedVertexNormals()
 		//全頂点の法線を平均する
 		XMVECTOR normal = {};
 		for (unsigned short index : v) {
-			normal += XMVectorSet(vertices[index].normal.x, vertices[index].normal.x, vertices[index].normal.x, 0);
+			normal += XMVectorSet(vertices[index].normal.x, vertices[index].normal.y, vertices[index].normal.z, 0);
 		}
 		normal = XMVector3Normalize(normal / (float)v.size());
 		//共通法線を使用する全ての頂点データに書き込む
